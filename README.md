@@ -1,16 +1,13 @@
 # responsive_dashboard_ui
 
-Responsive dashBoard UI
+Responsive FLutter App Can Ran on  desktop & tablet & mobileLarge & MObile
 
-## Getting Started
+## Desktop  view
+![image](https://github.com/user-attachments/assets/f7843a1b-22cd-491e-8f06-ca8154a8a8f8)
 
-This project is a starting point for a Flutter application.
+## Tablet  view
+![image](https://github.com/user-attachments/assets/a9ee55ef-66a6-4b20-aeac-138dbec3bddf)
 
-A few resources to get you started if this is your first Flutter project:
+## Mobile  view
+![image](https://github.com/user-attachments/assets/cd7dbb32-0cbd-4cbf-8f09-5428593b236a)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
