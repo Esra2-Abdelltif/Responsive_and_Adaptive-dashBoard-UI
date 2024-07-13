@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/my_cards_transction_history_section/my_cards_section/widget/dots_indicator.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/my_cards_transction_history_section/my_cards_section/widget/my_cards_page_view.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_dimensions/app_widths.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
 
 class MyCardsSection extends StatefulWidget {
   const MyCardsSection({super.key});
@@ -32,10 +33,10 @@ class _MyCardsSectionState extends State<MyCardsSection> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          width: 420,
+          width: AppWidths.cardContainerWidth,
           child: Text(
             'My card',
-            style: AppStyles.styleSemiBold20(),
+            style: AppTextStyles.styleSemiBold20(),
           ),
         ),
         const SizedBox(

@@ -26,20 +26,6 @@ class AppFontSizes {
   static double s55 = 55;
   static double s60 = 60;
 
-  static double headline1 = 96.0;
-  static double headline2 = 60.0;
-  static double headline3 = 48.0;
-  static double headline4 = 34.0;
-  static double headline5 = 24.0;
-  static double headline6 = 20.0;
-  static double subtitle1 = 18.0;
-  static double subtitle2 = 13.0;
-  static double body1 = 16.0;
-  static double body2 = 14.0;
-  static double button = 12.0;
-  static double caption = 13.0;
-  static double caption2 = 11.0;
-  static double overline = 10.0;
 }
 
 class AppIconSizes {

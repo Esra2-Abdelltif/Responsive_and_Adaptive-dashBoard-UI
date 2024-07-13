@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/core/data/models/transction_model.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
 
 class TransctionItem extends StatelessWidget {
   const TransctionItem({super.key, required this.transctionModel});
@@ -17,17 +17,17 @@ class TransctionItem extends StatelessWidget {
       child: ListTile(
         title: Text(
           transctionModel.title,
-          style: AppStyles.styleSemiBold16(),
+          style: AppTextStyles.styleSemiBold16(),
         ),
         subtitle: Text(
           transctionModel.date,
-          style: AppStyles.styleRegular16().copyWith(
+          style: AppTextStyles.styleRegular16().copyWith(
             color: const Color(0xFFAAAAAA),
           ),
         ),
         trailing: Text(
           transctionModel.amount,
-          style: AppStyles.styleSemiBold20().copyWith(
+          style: AppTextStyles.styleSemiBold20().copyWith(
             color: transctionModel.isWithdrawal
                 ? const Color(0xFFF3735E)
                 : const Color(0xFF7CD87A),

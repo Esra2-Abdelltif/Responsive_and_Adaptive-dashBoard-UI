@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_strings/app_image_paths.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
 
 class MyCard extends StatelessWidget {
   const MyCard({super.key});
@@ -26,12 +26,12 @@ class MyCard extends StatelessWidget {
               contentPadding:
                   const EdgeInsets.only(left: 31, right: 42, top: 16),
               title: Text('Name card',
-                  style: AppStyles.styleRegular16().copyWith(
+                  style: AppTextStyles.styleRegular16().copyWith(
                     color: Colors.white,
                   )),
               subtitle: Text(
                 'Syah Bandi',
-                style: AppStyles.styleMedium20(),
+                style: AppTextStyles.styleMedium20(),
               ),
               trailing: SvgPicture.asset(AppImagePaths.imagesGallery),
             ),
@@ -43,13 +43,13 @@ class MyCard extends StatelessWidget {
                 children: [
                   Text(
                     '0918 8124 0042 8129',
-                    style: AppStyles.styleSemiBold24().copyWith(
+                    style: AppTextStyles.styleSemiBold24().copyWith(
                       color: Colors.white,
                     ),
                   ),
                   Text(
                     '12/20 - 124',
-                    style: AppStyles.styleRegular16()
+                    style: AppTextStyles.styleRegular16()
                         .copyWith(color: Colors.white),
                   ),
                 ],

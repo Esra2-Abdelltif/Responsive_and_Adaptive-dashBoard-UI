@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:responsive_dashboard_ui/core/data/models/user_info_model.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_colors.dart';
 
-import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
 
 class UserInfoListTile extends StatelessWidget {
   const UserInfoListTile({
@@ -26,7 +26,7 @@ class UserInfoListTile extends StatelessWidget {
             alignment: AlignmentDirectional.centerStart,
             child: Text(
               userInfoModel.title,
-              style: AppStyles.styleSemiBold16(),
+              style: AppTextStyles.styleSemiBold16(),
             ),
           ),
           subtitle: FittedBox(
@@ -34,7 +34,7 @@ class UserInfoListTile extends StatelessWidget {
             alignment: AlignmentDirectional.centerStart,
             child: Text(
               userInfoModel.subTitle,
-              style: AppStyles.styleRegular12(),
+              style: AppTextStyles.styleRegular12(),
             ),
           ),
         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard_ui/core/data/models/all_expensess_item_model.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/all_expensess_and_quick_invoice_section/all_expenses/widget/all_expensess_item_header.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
 
 class InActiveAllExpensessItem extends StatelessWidget {
   const InActiveAllExpensessItem({
@@ -36,7 +36,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.title,
-              style: AppStyles.styleMedium16(),
+              style: AppTextStyles.styleMedium16(),
             ),
           ),
           const SizedBox(
@@ -46,7 +46,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.date,
-              style: AppStyles.styleRegular14(),
+              style: AppTextStyles.styleRegular14(),
             ),
           ),
           const SizedBox(
@@ -56,7 +56,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.price,
-              style: AppStyles.styleSemiBold24(),
+              style: AppTextStyles.styleSemiBold24(),
             ),
           ),
         ],
@@ -99,7 +99,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.title,
-              style: AppStyles.styleMedium16().copyWith(
+              style: AppTextStyles.styleMedium16().copyWith(
                 color: Colors.white,
               ),
             ),
@@ -111,7 +111,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.date,
-              style: AppStyles.styleRegular14().copyWith(
+              style: AppTextStyles.styleRegular14().copyWith(
                 color: const Color(0xFFFAFAFA),
               ),
             ),
@@ -123,7 +123,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.price,
-              style: AppStyles.styleSemiBold24()
+              style: AppTextStyles.styleSemiBold24()
                   .copyWith(color: Colors.white),
             ),
           ),

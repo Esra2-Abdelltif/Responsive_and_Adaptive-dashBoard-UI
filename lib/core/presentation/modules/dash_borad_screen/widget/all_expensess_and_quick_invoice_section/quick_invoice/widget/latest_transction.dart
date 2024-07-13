@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/all_expensess_and_quick_invoice_section/quick_invoice/widget/latest_transction_list_view.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
 
 class LatestTransction extends StatelessWidget {
   const LatestTransction({super.key});
@@ -12,7 +12,7 @@ class LatestTransction extends StatelessWidget {
       children: [
         Text(
           'Latest Transaction',
-          style: AppStyles.styleMedium16(),
+          style: AppTextStyles.styleMedium16(),
         ),
         const SizedBox(
           height: 16,
