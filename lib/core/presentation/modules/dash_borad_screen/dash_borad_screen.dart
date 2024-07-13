@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/custom_drawer_widget/custom_drawer.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_colors.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/adaptive_layout.dart';
+import 'package:responsive_dashboard_ui/core/themes/adaptive_layout.dart';
+import 'package:responsive_dashboard_ui/core/themes/size_config.dart';
 import 'package:responsive_dashboard_ui/infrastructure/utils/extention/dimension_extension.dart';
 import 'package:responsive_dashboard_ui/infrastructure/utils/functions/init_generic_variables_that_used_globally.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/size_config.dart';
 
 import 'layout/mobile/dashboard_mobile_layout.dart';
 import 'layout/tablet/dashboard_tablet_layout.dart';

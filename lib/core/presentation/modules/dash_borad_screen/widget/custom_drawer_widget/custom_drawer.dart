@@ -4,6 +4,7 @@ import 'package:responsive_dashboard_ui/core/data/models/user_info_model.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/custom_drawer_widget/widget/active_and_inactive_item.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/custom_drawer_widget/widget/drawer_items_list_view.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/shared_widget/user_info_list_tile.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_spaces.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_strings/app_image_paths.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -14,9 +15,9 @@ class CustomDrawer extends StatelessWidget {
     return Container(
       width: MediaQuery.sizeOf(context).width * .7,
       color: const Color.fromRGBO(255, 255, 255, 1),
-      child: const CustomScrollView(
+      child:  CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
+          const  SliverToBoxAdapter(
             child: UserInfoListTile(
               userInfoModel: UserInfoModel(
                   image: AppImagePaths.imagesAvatar3,
@@ -25,30 +26,26 @@ class CustomDrawer extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(
-              height: 8,
-            ),
+            child: AppSpaces.vSpace8,
           ),
-           DrawerItemsListView(),
-          SliverFillRemaining(
+          const  DrawerItemsListView(),
+            SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               children: [
-                Expanded(
+                const  Expanded(
                     child: SizedBox(
                       height: 20,
                     )),
-                InActiveDrawerItem(
+                const   InActiveDrawerItem(
                   drawerItemModel: DrawerItemModel(
                       title: 'Setting system', image: AppImagePaths.imagesSettings),
                 ),
-                InActiveDrawerItem(
+                const   InActiveDrawerItem(
                   drawerItemModel: DrawerItemModel(
                       title: 'Logout account', image: AppImagePaths.imagesLogout),
                 ),
-                SizedBox(
-                  height: 48,
-                )
+                AppSpaces.vSpace48,
               ],
             ),
           )

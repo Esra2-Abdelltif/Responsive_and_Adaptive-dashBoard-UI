@@ -4,7 +4,7 @@ import 'package:responsive_dashboard_ui/core/themes/app_colors.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_fonts/font_families.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_fonts/font_sizes.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_fonts/font_weights.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/text_size_responsvie.dart';
+import 'package:responsive_dashboard_ui/infrastructure/utils/functions/text_size_responsvie.dart';
 
 abstract class AppTextStyles {
   static TextStyle styleRegular16() {

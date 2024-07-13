@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/income_section/widget/detailed_income_chart.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/income_section/widget/income_chart.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/income_section/widget/income_details.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/size_config.dart';
+import 'package:responsive_dashboard_ui/core/themes/size_config.dart';
 
 class IncomSectionBody extends StatelessWidget {
   const IncomSectionBody({

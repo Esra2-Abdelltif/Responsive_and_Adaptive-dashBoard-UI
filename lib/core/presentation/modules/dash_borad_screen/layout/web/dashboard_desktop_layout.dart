@@ -3,18 +3,18 @@ import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_scr
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/custom_drawer_widget/custom_drawer.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/income_section/income_section.dart';
 import 'package:responsive_dashboard_ui/core/presentation/modules/dash_borad_screen/widget/my_cards_transction_history_section/my_cards_and_transction_history_section.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_spaces.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       children: [
-        Expanded(child: CustomDrawer()),
-        SizedBox(
-          width: 32,
-        ),
+        const Expanded(child: CustomDrawer()),
+        AppSpaces.hSpace32,
+
         Expanded(
           flex: 3,
           child: CustomScrollView(
@@ -23,26 +23,22 @@ class DashboardDesktopLayout extends StatelessWidget {
                 hasScrollBody: false,
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                         flex: 2,
                         child: Padding(
                           padding: EdgeInsets.only(top: 40),
                           child: AllExpensessAndQuickInvoiceSection(),
                         )),
-                    SizedBox(
-                      width: 24,
-                    ),
+                    AppSpaces.hSpace24,
+
                     Expanded(
                         child: Column(
                       children: [
-                        SizedBox(
-                          height: 40,
-                        ),
-                        MyCardsAndTransctionHistorySection(),
-                        SizedBox(
-                          height: 24,
-                        ),
-                        Expanded(child: IncomeSection()),
+                        AppSpaces.vSpace40,
+
+                        const MyCardsAndTransctionHistorySection(),
+                        AppSpaces.vSpace24,
+                        const Expanded(child: IncomeSection()),
                       ],
                     )),
                   ],

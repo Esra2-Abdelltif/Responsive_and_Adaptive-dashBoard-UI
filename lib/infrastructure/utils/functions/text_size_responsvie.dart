@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:responsive_dashboard_ui/infrastructure/utils/size_config.dart';
+import 'package:responsive_dashboard_ui/core/themes/size_config.dart';
 import 'package:responsive_dashboard_ui/main.dart';
 
 //Scale factor

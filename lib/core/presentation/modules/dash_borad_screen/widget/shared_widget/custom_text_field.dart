@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_colors.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_raduis.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key, required this.hint});
@@ -10,9 +12,9 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
           hintText: hint,
           hintStyle: AppTextStyles.styleRegular16().copyWith(
-            color: const Color(0xFFAAAAAA),
+            color: AppColors.hintTextColor,
           ),
-          fillColor: const Color(0xFFFAFAFA),
+          fillColor: AppColors.cardColor,
           filled: true,
           border: buildBorder(),
           enabledBorder: buildBorder(),
@@ -22,9 +24,9 @@ class CustomTextField extends StatelessWidget {
 
   OutlineInputBorder buildBorder() {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: AppCircularRadius.radius12,
       borderSide: const BorderSide(
-        color: Color(0xFFFAFAFA),
+        color:AppColors.cardColor,
       ),
     );
   }

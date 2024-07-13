@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_raduis.dart';
 
 class CustomBackgroundContainer extends StatelessWidget {
   const CustomBackgroundContainer({
@@ -16,7 +17,7 @@ class CustomBackgroundContainer extends StatelessWidget {
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: AppCircularRadius.radius12,
         ),
       ),
       child: child,

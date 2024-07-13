@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/core/themes/app_fonts/app_styles.dart';
+import 'package:responsive_dashboard_ui/core/themes/app_spaces.dart';
 
 class RangeOptions extends StatelessWidget {
   const RangeOptions({
@@ -23,9 +24,8 @@ class RangeOptions extends StatelessWidget {
             'Monthly',
             style: AppTextStyles.styleMedium16(),
           ),
-          const SizedBox(
-            width: 18,
-          ),
+          AppSpaces.hSpace18,
+
           Transform.rotate(
             angle: -1.57079633,
             child: const Icon(
