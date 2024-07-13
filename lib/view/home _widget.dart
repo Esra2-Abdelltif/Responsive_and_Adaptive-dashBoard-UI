@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard_ui/utils/functions/init_generic_variables_that_used_globally.dart';
-import 'package:responsive_dashboard_ui/utils/text_size_responsvie.dart';
+import 'package:responsive_dashboard_ui/infrastructure/utils/functions/init_generic_variables_that_used_globally.dart';
+import 'package:responsive_dashboard_ui/infrastructure/utils/text_size_responsvie.dart';
 import 'package:responsive_dashboard_ui/view/widget/list_title/list_title.dart';
-import 'package:responsive_dashboard_ui/utils/functions/init_generic_variables_that_used_globally.dart';
 
 class HomeWidgetView extends StatelessWidget {
   const HomeWidgetView({super.key});

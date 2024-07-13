@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:responsive_dashboard_ui/utils/app_styles.dart';
+import 'package:responsive_dashboard_ui/infrastructure/utils/app_styles.dart';
 
 class ListTileWidget extends StatelessWidget {
   const ListTileWidget({
