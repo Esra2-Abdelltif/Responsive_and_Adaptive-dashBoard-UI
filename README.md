@@ -1,6 +1,6 @@
 # responsive_dashboard_ui
 
-Responsive FLutter App Can Ran on  desktop & tablet & mobileLarge & MObile
+Build Real Responsive and Adaptive DashBoard Screen  Can Ran on  desktop & tablet & mobileLarge & MObile
 
 ## Desktop  view
 ![image](https://github.com/user-attachments/assets/f7843a1b-22cd-491e-8f06-ca8154a8a8f8)
